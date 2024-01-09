@@ -27,7 +27,7 @@ function handleSubmitBtnClick() {
         const listItems = document.createElement('li');
 
         const loginName = document.createElement('p');
-        loginName.textContent = `User login name: ${user.login}`;
+        loginName.innerHTML = `<strong>login Name:</strong> ${user.login}`;
         listItems.appendChild(loginName);
 
         const avatarImg = document.createElement('img');
