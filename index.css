@@ -8,14 +8,36 @@
   display: flex;
 }
 
-ul {
+#user-list li {
   list-style: none;
 }
-img{
-  width:200px;
-  height:200px;
+
+#user-list p {
+  cursor: pointer;
 }
-a{
+
+#user-list img {
+  width: 200px;
+  height: 200px;
+}
+
+#user-list a {
   display: flex;
   margin-top: 5px;
+}
+
+#repos-list {
+  margin-top: 55px;
+  margin-left: 40px;
+}
+
+#user-list p {
+  cursor: pointer;
+}
+
+#repos-list li{
+  margin-bottom: 10px;
+}
+ #repos-list a {
+  text-decoration: none;
 }
