@@ -76,7 +76,10 @@ function getUserRepos(login) {
 
       repos.forEach((repo) => {
         const eachRepoLink = document.createElement('li');
-        eachRepoLink.textContent = repo.name;
+        const reposLink = document.createElement('a');
+        reposLink.href = repo.html_url;
+        reposLink.textContent = repo.name;
+        eachRepoLink.appendChild(reposLink);
         repoList.appendChild(eachRepoLink);
       });
     })
